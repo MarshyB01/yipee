@@ -1,0 +1,257 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    
+    background-size: cover;
+    background-attachment: fixed;
+}   
+
+.content{
+    width: 100%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+
+}
+.logo{
+    position: fixed;
+    float: left;
+    margin: 10px 36px;
+    Color: white;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.favicon{
+    width: 35px;
+    height: 35px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    color:white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;   
+}
+
+nav.black ul{
+    background: #000;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.center{
+    text-align: center;
+    padding-top: 130px;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+.centerbio{
+    text-align: left;
+    padding-top: 130px;;
+    padding-left: 25%;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+.centernuc{
+    text-align: right;
+    padding-top: 130px;;
+    padding-right: 25%;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+.START{
+    color:white;
+    font-weight: bold;
+    font-size: 30px;
+    background:url("https://cdn.pixabay.com/photo/2022/06/12/11/01/rounded-7257777_1280.png") no-repeat 50% 50%;
+    background-size:400px;
+}
+
+button{
+    border:none;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    background-color: #FF8C00;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration:wavy;
+
+}
+
+.web{
+    font-size: 50px;
+    color: white;
+    line-height: 3px;
+}
+
+#content, #top, #alt1, #alt2, #alt3, #map, #sources{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+.image-container {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.details {
+    font-family: Open Sans;
+    margin-left: 400px;
+    margin-right: 400px;
+    font-size: 20px;
+    text-indent: 50px;
+    line-height: 35px;
+    text-align: justify;
+}
+
+.imageContainer {
+    text-align: center;
+    vertical-align: middle;
+    
+}
+.currenti{
+    text-align: center;
+    vertical-align: middle;
+    font-family: Open Sans;
+}
+
+.imageDescription{
+    text-align: center;
+    font-family: Open Sans;
+    color:#000;
+}
+
+.txtleft{
+    font-family: Open Sans;
+    font-size: 20px;
+    text-indent: 50px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.txtright{
+    font-family: Open Sans;
+    font-size: 20px;
+    text-indent: 50px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.rightimg{
+    margin-right: 100px;
+}
+
+.leftimg{
+    margin-left: 100px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  .alt1container{
+    background-color: #504128;
+  }
+  caption{
+    color: whitesmoke;
+  }
+
+  .alt2container{
+    background-color: #FDF6EA;
+  }
+
+  .alt3container{
+    background-color: lightslategray;
+  }
+
+  .mapcontainer{
+    background-color: #C2965C;
+  }

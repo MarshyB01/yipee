@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NJCO Alternative Energy</title>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdONGJc8NK7x-URh8cEs5zzWaQbY5y1AO05M8No6_mvQ&s">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+        <style>
+           .table-container {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .table-container table {
+      border-collapse: collapse;
+      width: 30%;
+    }
+
+    .table-container th,
+    .table-container td {
+      padding: 5px;
+      text-align: center;
+      border: 1px solid black;
+    }
+
+    .table-container th {
+      background-color: #f2f2f2;
+    }
+        </style>
+     <style>
+        footer {
+          background-color: #eee;
+          padding: 20px 40px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+    
+        .footer-logo {
+          width: auto;
+          height: 40px;
+        }
+    
+        .footer-text {
+          margin-bottom: 0;
+        }
+    
+        /* Add media queries for responsiveness */
+        @media (max-width: 768px) {
+          footer {
+            flex-direction: column;
+            align-items: center;
+          }
+    
+          .footer-text {
+            margin-top: 20px;
+          }
+        }
+      </style>
+      <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      .leaflet-container {
+        height: 400px;
+        width: 600px;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    </style>
+  
+    <style>#map { width: 800px; height: 500px; }
+  .info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
+  .legend { text-align: left; line-height: 18px; color: #555; } .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }</style>
+</head>
+
+<body style="background-color: antiquewhite;">
+
+    <div class="wrapper">
+        <header id="top" style="background-color: black; " >
+            <nav>
+                <div class="logo">
+                    <table>
+                        <tr>
+                            <td><img class="favicon"
+                                    src="https://uxwing.com/wp-content/themes/uxwing/download/nature-and-environment/environmental-icon.png">
+                            </td>
+                            <td>Fort Lee Highschool<br>Alternative
+                                Energy</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu">
+                    <ul style="height: 65px;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="solar.html">Alt 1</a></li>
+                        <li><a href="nuclear.html">Alt 2</a></li>
+                        <li><a href="biofuel.html">Alt 3</a></li>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="#sources">Sources</a></li>
+                          
+                    </ul>
+                </div>
+               
+
+            </nav>
+
+            <div class="centernuc" >
+                <table style="padding-left: 25%;">
+                    <tr>
+                        
+                <td>                <img src = "https://i.pinimg.com/736x/90/18/d6/9018d64dd09093771de76b89ea5e1fb2.jpg" alt = "nuclear" width="426"
+                height="739"
+                 style="float: right; padding-left: 100px; object-fit: scale-down;"/></td>
+                 <td style="padding-bottom: 80px;"><h1>THIS IS <br>
+                    NUKES<br>
+                    <div style="line-height: 50px; padding-left: 20px;"><span class="web">Talks about kryptonie <br> shiny green stuf</span></div>
+                </h1>
+
+                <button type="button">
+                    <style type="text/css" media="screen">
+                        a:link {
+                            color: #ffffff;
+                            text-decoration: none;
+                        }
+
+                        a:visited {
+                            color: white;
+                            text-decoration: none;
+                        }
+
+                        a:hover {
+                            color: white;
+                            text-decoration: none;
+                        }
+
+                        a:active {
+                            color: white;
+                            text-decoration: underline;
+                        }
+                    </style> <a href="#alt1">Start Learning</a>
+                </button></td>
+                    </tr>
+
+
+                </table>
+            </div>
+        </header>
+
+        <!--Current Issue Slide-->
+
+      
+            <!--Alt 1 Slide-->
+            <br>
+            <br>
+            
+            <div id="alt1"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <h1 class="currenti">What is the current issue?</h1>
+            <div class="imageContainer">
+                <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="White and black tanker on sea under white clouds." title="Pollution" width="800"
+                    height="500">
+
+            </div>
+            <p class="imageDescription">
+                Photo by <a href="https://unsplash.com/@chrisleboutillier" target="blank"
+                    style="color: black;text-decoration: underline;"><em>Chris
+                        LeBoutillier</em></a>, January
+                21,
+                2021
+            </p>
+
+            <p class="details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, delectus minima accusamus odio voluptatem
+                voluptates, deserunt mollitia eum pariatur optio,
+                aspernatur fugit nulla labore ipsam ipsum vel deleniti
+                fuga
+                voluptatum. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Ipsa, provident nesciunt cupiditate
+                quidem
+                excepturi recusandae nihil obcaecati voluptatum omnis,
+                sit a consequatur esse rem aperiam fugit, mollitia ut
+                quod numquam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, delectus minima accusamus odio voluptatem
+                voluptates, deserunt mollitia eum pariatur optio,
+                aspernatur fugit nulla labore ipsam ipsum vel deleniti
+                fuga
+                voluptatum. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Ipsa, provident nesciunt cupiditate
+                quidem
+                excepturi recusandae nihil obcaecati voluptatum omnis,
+                sit a consequatur esse rem aperiam fugit, mollitia ut
+                quod numquam.
+            </p>
+            <br>
+            <p class="details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, delectus minima accusamus odio voluptatem
+                voluptates, deserunt mollitia eum pariatur optio,
+                aspernatur fugit nulla labore ipsam ipsum vel deleniti
+                fuga
+                voluptatum. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Ipsa, provident nesciunt cupiditate
+                quidem
+                excepturi recusandae nihil obcaecati voluptatum omnis,
+                sit a consequatur esse rem aperiam fugit, mollitia ut
+                quod numquam.
+            </p>
+            <br>
+            <br>
+    
+        </div>
+              
+            <!--Sources Slide-->
+          
+            <div id="sources"></div>
+            <br>
+            <br>
+            <br>
+            <hr></div></div>
+            <p>
+                 Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources Sources
+            </p>
+       
+
+    </div>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop()) {
+                $("nav").addClass("black");
+            }
+            else {
+                $("nav").removeClass("black");
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+
+    </script>
+
+    
+</body>
+  <!-- The footer -->
+  <footer style="background-color: #504128; color: wheat;">
+    <img src="https://via.placeholder.com/40x40" alt="Footer logo" class="footer-logo">
+    <div class="footer-text">
+      <p>Contact Us: email@example.com</p>
+      <p>Phone: 555-555-5555</p>
+    </div>
+  </footer>
+
+</html>
